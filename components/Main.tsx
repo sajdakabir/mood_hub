@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Main() {
-  return (
-    <main className=''>
+function Main( props ) {
 
+    const { children } = props;
+  return (
+    <main>
+        {children}
     </main>
   )
 }

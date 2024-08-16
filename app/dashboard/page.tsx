@@ -1,8 +1,11 @@
+import Main from '@/components/Main'
 import React from 'react'
 
 function DashboardPage() {
     return(
-      <h1>test </h1>
+      <Main className=''> 
+
+      </Main>
     )
 }
 
