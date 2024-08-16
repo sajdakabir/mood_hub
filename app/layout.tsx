@@ -18,12 +18,12 @@ export default function RootLayout({
 }>) {
   const header = (
     <header className="p-4 sm:p-8 flex items-center justify-between gap-4">
-      <h1 className={'text-base sm:text-lg textGradient ' + fugaz.className} >MoodHub</h1>
+      <h1 className={'text-base sm:text-lg textGradient text-slate-800 ' + fugaz.className} >MoodHub</h1>
     </header>
   )
 
   const footer = (
-    <footer>
+    <footer className="p-4 sm:p-8">
       foot
     </footer>
   )
