@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Fugaz_One, Inter } from "next/font/google";
+import { Fugaz_One, Inter, Open_Sans } from "next/font/google";
 import "./globals.css";
 
 
-const inter = Inter({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"] });
 const fugaz = Fugaz_One({ subsets: ["latin"], weight:['400'] });
 
 export const metadata: Metadata = {
@@ -23,13 +23,13 @@ export default function RootLayout({
   )
 
   const footer = (
-    <footer className="p-4 sm:p-8">
-      foot
+    <footer className="p-4 sm:p-8 grid place-items-center">
+     <p className={"text-indigo-500 " + fugaz.className}>Created for fun</p>
     </footer>
   )
   return (
     <html lang="en">
-      <body className={ 'w-full max-w-[1000px] mx-auto text-sm sm:text-base min-h-screen flex flex-col '+inter.className}>
+      <body className={ 'w-full max-w-[1000px] mx-auto text-sm sm:text-base min-h-screen flex flex-col '+openSans.className}>
        {header}
         {children}
         {footer}
