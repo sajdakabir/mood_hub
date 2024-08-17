@@ -24,7 +24,8 @@ export default function RootLayout({
 
   const footer = (
     <footer className="p-4 sm:p-8 grid place-items-center">
-     <p className={"text-indigo-500 " + fugaz.className}>Created for fun</p>
+     {/* <p className={"text-indigo-500 " + fugaz.className}>Created for fun</p> */}
+     <p className={"text-indigo-500 " + fugaz.className}>🍋 | lemon iced tea</p>
     </footer>
   )
   return (
