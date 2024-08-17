@@ -29,7 +29,7 @@ export default function RootLayout({
   )
   return (
     <html lang="en">
-      <body className={ 'w-full max-w-[1000px] mx-auto text-sm sm:text-base min-h-screen flex flex-col '+openSans.className}>
+      <body className={ 'w-full max-w-[1000px] mx-auto text-sm sm:text-base min-h-screen flex flex-col text-slate-600 '+openSans.className}>
        {header}
         {children}
         {footer}
